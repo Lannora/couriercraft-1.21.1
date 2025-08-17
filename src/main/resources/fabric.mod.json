@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "couriercraft",
+	"version": "${version}",
+	"name": "Courier Craft",
+	"description": "La Poste sur minecraft!",
+	"authors": [
+		"Lannora"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/Lannora/Courier-Craft-1.21"
+	},
+	"license": "MIT",
+	"icon": "assets/couriercraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lannora.couriercraft.CourierCraft"
+		],
+		"fabric-datagen": [
+			"com.lannora.couriercraft.CourierCraftDataGenerator"
+		],
+        "client": [
+          "com.lannora.couriercraft.CourierCraftClient"
+        ]
+	},
+	"mixins": [
+		"couriercraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
