@@ -1,5 +1,6 @@
 package com.lannora.couriercraft;
 
+import com.lannora.couriercraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,6 @@ public class CourierCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
 	}
 }
