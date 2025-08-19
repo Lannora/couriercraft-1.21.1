@@ -1,4 +1,6 @@
 {
   "item.couriercraft.letter": "Letter",
-  "item.couriercraft.mailbox": "Mailbox"
+
+  "block.couriercraft.mailbox_block": "Mailbox",
+  "itemgroup.couriercraft.couriercraftItems": "CourierCraft"
 }

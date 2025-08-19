@@ -1,5 +1,7 @@
 package com.lannora.couriercraft;
 
+import com.lannora.couriercraft.block.ModBlocks;
+import com.lannora.couriercraft.item.CouriercraftItemGroup;
 import com.lannora.couriercraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +14,9 @@ public class CourierCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        CouriercraftItemGroup.registerItemGroups();
+
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
